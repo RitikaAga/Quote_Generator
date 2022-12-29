@@ -1,0 +1,139 @@
+body{
+    background-image: url(image2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.quotes_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(201, 176, 176, 0.8);
+    width: 330px;
+    height: 175px;
+    margin-left: 150px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 200px;
+    overflow:hidden;
+    box-shadow: 0px 0px 10px 5px grey;
+  }
+  .quotes-text{
+    margin:  auto 20px;
+    font-weight: bold;
+
+  }
+  .author{
+    margin-bottom: 15px;
+  }
+  .quotes_container:hover{
+    transform:skewX(15deg);
+    color:rgb(103 58 183);
+    background-color: rgba(201, 176, 176, 0.8);
+    font-weight: bold;
+    font-size: 18px;
+
+  }
+  button{
+    display: inline-block;
+    position: relative;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    background: rgba(0,0,0,0.09);
+    width: 80px;
+height:30px;
+margin-left: 410px;
+margin-top: 15px;
+  }
+  span{
+    display: block;
+  }
+  button::before, button::after{
+    content:"";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    transition: all 0.2s linear;
+    background: #2196f3;;
+  }
+  
+  span::before, span::after{
+    content:"";
+    width:2px;
+    height:0;
+    position: absolute;
+    transition: all 0.2s linear;
+    background:#2196f3;;
+  }
+  button:hover::before, button:hover::after{
+    width: 100%;
+  }
+  button:hover span::before, button:hover span::after{
+    height: 100%;
+  }
+  span:hover{
+    color:yellow;
+  }
+  .button::after{
+    left:0;
+    bottom: 0;
+    transition-duration: 0.4s;
+  }
+  .button span::after{
+    right:0;
+    top: 0;
+    transition-duration: 0.4s;
+  }
+  .button::before{
+    right: 0;
+    top: 0;
+    transition-duration: 0.4s;
+  }
+  .button span::before{
+    left: 0;
+    bottom: 0;
+    transition-duration: 0.4s;
+  }
+
+ @media only screen and (max-width: 600px) {
+   body {
+     background-image: url(./img.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+   }
+     .quotes_container {     
+        width: 230px;
+       height: 120px; 
+       margin-left: 70px;
+       border: none;
+       border-radius: 20px;
+       margin-top: 200px;
+       overflow: hidden;
+     }
+                button {
+                   background: none;
+                   border: none;
+                   color: #fff;
+                   font-size: 15px;
+                   cursor: pointer;
+                   background: rgba(0, 0, 0, 0.09);
+                   width: 80px;
+                   height: 30px;
+                   margin-left: 100px;
+                   margin-top: 15px;
+                 }
+
+                                     .quotes-text {
+                                       margin: auto 20px;
+                                 font-size:   11px;
+                  
+                                     }
+                                                                            .author {
+                                                                              margin-bottom: 15px;
+                                                                              font-size:9px;
+                                                                            }
+  }
