@@ -37,7 +37,9 @@ async function Random_Quote() {
     }
     document.querySelector(".author").style.margin = "auto";
     
-    let img = ['url("./b1.jpg")','url("./b2.jpg")','url("./b3.jpg")' ,'url("./b4.jpg")', 'url("./b5.jpg")', 'url("./b6.jpg")', 'url("./b7.jpg")', 'url("./b8.jpg")', 'url("./b9.jpg")', 'url("./b10.jpg")', 'url("./b11.jpg")'];
+    let img = ['url("./img/b1.jpg")','url("./img/b2.jpg")','url("./img/b3.jpg")' ,'url("./img/b4.jpg")', 
+               'url("./img/b5.jpg")', 'url("./img/b6.jpg")', 'url("./img/b7.jpg")', 'url("./img/b8.jpg")', 
+               'url("./img/b9.jpg")', 'url("./img/b10.jpg")', 'url("./img/b11.jpg")'];
     let rI =  img[Math.floor(Math.random()*img.length)];
     console.log(rI);
     document.body.style.backgroundImage = rI;
