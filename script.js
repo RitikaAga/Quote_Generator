@@ -37,12 +37,10 @@ async function Random_Quote() {
     }
     document.querySelector(".author").style.margin = "auto";
     
-    let img = ['url("./img/b1.jpg")','url("./img/b2.jpg")','url("./img/b3.jpg")' ,'url("./img/b4.jpg")', 
-               'url("./img/b5.jpg")', 'url("./img/b6.jpg")', 'url("./img/b7.jpg")', 'url("./img/b8.jpg")', 
-               'url("./img/b9.jpg")', 'url("./img/b10.jpg")', 'url("./img/b11.jpg")'];
-    let rI =  img[Math.floor(Math.random()*img.length)];
-    console.log(rI);
-    document.body.style.backgroundImage = rI;
+    let img = ['url("./img/b1.jpg")','url("./img/b2.jpg")','url("./img/b3.jpg")' ,'url("./img/b4.jpg")', 'url("./img/b5.jpg")', 'url("./img/b6.jpg")', 'url("./img/b7.jpg")', 'url("./img/b8.jpg")', 'url("./img/b9.jpg")', 'url("./img/b10.jpg")', 'url("./img/b11.jpg")'];
+    let randomI =  img[Math.floor(Math.random()*img.length)];
+    console.log(randomI);
+    document.body.style.backgroundImage = randomI;
     document.body.style.backgroundRepeat =" no-repeat";
     document.body.style.backgroundSize =  "cover";
 }
