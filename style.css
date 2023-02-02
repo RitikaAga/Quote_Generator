@@ -1,6 +1,6 @@
 body{
   
-    background-image: url(image2.jpg);
+    background-image: url(./img/image2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -129,7 +129,7 @@ ul li:hover{
       height: 100%;
   }
    body {
-     background-image: url(./img.jpg);
+     background-image: url(./img/img.jpg);
      background-size: cover;
      background-repeat: no-repeat;
    }
