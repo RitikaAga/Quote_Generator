@@ -45,13 +45,20 @@ async function Random_Quote() {
     document.body.style.backgroundSize =  "cover";
 }
 
+let count = 0;
 soundBtn.addEventListener("click", () => {
     const qt2 = quoteText.textContent;
     const an2 = authorName.textContent;
-    const utterThis = new SpeechSynthesisUtterance();
+    ++count;
+    if(count%2 !=0)
+    {
+        const utterThis = new SpeechSynthesisUtterance();
     utterThis.lang = 'hi-IN';
     utterThis.text = `${qt2} by ${an2}`;
     speechSynthesis.speak(utterThis); 
+    } else {
+        speechSynthesis.cancel();
+    }
 })
 
 
